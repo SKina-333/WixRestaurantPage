@@ -1,5 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root {
+    --montserrat-normal : "Montserrat", sans-serif;
+    
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+
+}
+
 body {
+    background-color: beige;
+}
+
+.navigation {
+
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid black;
+}
+
+.first-bar , .second-bar {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    font-family: var(--montserrat-normal);
+    
+    border-bottom: 1px solid black;
+   
+}
+
+/*First Nav Config*/
+
+.first-bar {
+    padding: 10px 60px 10px 60px;
+}
+
+
+
+.first-bar .right-actions {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.search-bar {
+    position: relative;
+    height: 40px;
+    max-width: 250px;
     width: 100%;
+
+    background: transparent;
+    
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 15px;
+    color: #0f0f0f;
+    pointer-events: none; /* Prevents the icon from blocking input focus */
+}
+
+.search-bar input {
     height: 100%;
-    background-color: aqua;
+    width: 100%;
+    outline: none;
+    font-size: 15px;
+    font-weight: 400;
+    border: none;
+    padding: 0 20px 0 35px; /* Adjusted padding to make room for the icon */
+    background-color: transparent;
+}
+
+.first-bar .right-actions {
+    gap: 20px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    height: 40px;
+    max-width: 250px;
+    width: 100%;
+
+    background: transparent;
+    
+    
+}
+
+.profile i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 19px;
+    color: #0f0f0f;
+    pointer-events: none; 
+}
+
+.profile button {
+    height: 100%;
+    width: 100%;
+    outline: none;
+
+    font-size: 16px;
+    font-weight: 400;
+
+    border: none;
+    padding: 0 20px 0 45px; 
+    background-color: transparent;
+
+    cursor: pointer;
+}
+
+.first-bar .right-actions .fa-solid.fa-bag-shopping {
+    font-size: 35px;
+}
+
+
+/* Second Nav*/
+
+.second-bar {
+    margin-bottom: 5px;
+    align-items: center;
+    padding: 0px 60px 0px 60px;
+}
+
+.logo {
+    
+    padding: 25px 20px 30px 20px;
+
+    margin-bottom: 5px;
+    font-size: 30px;
+    border-left: 1px solid #0f0f0f;
+    border-right: 1px solid #0f0f0f;
+}
+
+.second-bar .left-actions , .second-bar .right-actions {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.second-bar .right-actions {
+    font-size: 25px;
+    gap: 30px;
+}
+
+.second-bar .left-actions button{
+    padding: 20px 20px;
+    background: transparent;
+    cursor: pointer;
 }
