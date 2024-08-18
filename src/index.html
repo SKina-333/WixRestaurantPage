@@ -27,9 +27,9 @@
             </div>
             <div class="second-bar">
                 <div class="left-actions">
-                    <button>Home</button>
-                    <button>Menu</button>
-                    <button>About</button>
+                    <button class="tab_switch active">Home</button>
+                    <button class="tab_switch">Menu</button>
+                    <button class="tab_switch">About</button>
                 </div>
                 <p class="logo">RESTAURANT</p>
                 <div class="right-actions">
@@ -40,24 +40,74 @@
             </div>
         </nav>
     </header>
-    <div id="content">
+    <div class="content">
         <div class="parallax">
             <img class="parallax__bg" src="./img/sect-one-background.jpg" alt="" />
         </div>
         <div class="sect-one">
             <div class="moto">
-                <p>It's Always Tea Time</p>
-                <p>With Bloom's Herbal Tea</p>
+                <p class="text-1">It's Always Tea Time</p>
+                <p class="text-2">With Bloom's Herbal Tea</p>
             </div>
             <div class="button">
-                <button>Shop Now</button>
+                <button>SHOP NOW</button>
             </div>
         </div> 
         
         <div class="sect-two">
-            <div class="heading"></div>
-            <div class="showcase"></div>
-            <div class="button"></div>
+            <div class="heading">
+                <p class="sect-two-title"><span>New Arrivals</span></p>
+                <div class="text-area">
+                    <p class="sect-two-desc">I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you.</p>
+                </div>
+            </div>
+            <div class="showcase">
+                <div class="card">
+                    <div class="item-display">
+
+                    </div>
+                    <div class="item-desc">
+                        <p class="item-name">Item 1</p>
+                        <p class="item-price">$0.00</p>   
+                    </div>
+                    
+                </div>
+                <div class="card">
+                    <div class="item-display">
+
+                    </div>
+                    <div class="item-desc">
+                        <p class="item-name">Item 1</p>
+                        <p class="item-price">$0.00</p>   
+                    </div>
+                    
+                </div>
+                
+                <div class="card">
+                    <div class="item-display">
+
+                    </div>
+                    <div class="item-desc">
+                        <p class="item-name">Item 1</p>
+                        <p class="item-price">$0.00</p>   
+                    </div>
+                    
+                </div>
+
+                <div class="card">
+                    <div class="item-display">
+
+                    </div>
+                    <div class="item-desc">
+                        <p class="item-name">Item 1</p>
+                        <p class="item-price">$0.00</p>   
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="button">
+                <button>SHOP ALL</button>
+            </div>
         </div>
         <div class="parallax">
             <img class="parallax__bg2" src="./img/sect-one-background.jpg" alt="" />
@@ -66,11 +116,97 @@
             <p>Read Our Blog</p>
         </div>
         <div class="sect-four">
-            <p>Testimony</p>
+            <div class="slide-container">
+                <div class="slide-1">
+                    <div class="text-area">
+                        <p class="test-desc">   
+                            “I'm a testimonial. Click to edit me and add text that says something nice about you and your services.”
+                        </p>
+                    </div>
+                    
+                    <p class="author">Kate Braxton</p>
+                </div>
+                <div class="slide-2">
+                    <div class="text-area">
+                        <p class="test-desc">   
+                            “I'm a testimonial. Click to edit me and add text that says something nice about you and your services.”
+                        </p>
+                    </div>
+                    <p class="author">Ella Davidson</p>
+                </div>
+                <div class="slide-3">
+                    <div class="text-area">
+                        <p class="test-desc">   
+                            “I'm a testimonial. Click to edit me and add text that says something nice about you and your services.”
+                        </p>
+                    </div>
+                    <p class="author">Ray Simons</p>
+                </div>
+            </div>
         </div>
         <div class="sect-five">
+            <div class="container">
+                <div class="treemap-nav">
+                    <div class="bottom-nav">
+                        <div class="nav-title">
+                            <p>Get to Know</p>
+                            <p>Bloom's Tea Better</p>
+                        </div>
+                        <ul class="navlist">
+                            <li><button>Home</button></li>
+                            <li><button>Menu</button></li>
+                            <li><button>About</button></li>
+                        </ul>
+                    </div>
+                    <div class="help-nav">
+                        <div class="title-container">
+                            <p class="help-title">Help</p>
+                        </div>
+                        <ul class="navlist">
+                            <li><button>FAQ</button></li>
+                            <li><button>Shipping & Returns</button></li>
+                            <li><button>Store Policy</button></li>
+                            <li><button>Payment Methods</button></li>
+                        </ul>
+                    </div>
+                    <div class="social-nav">
+                        <div class="title-container">
+                            <p class="social-title">Follow Us</p>
+                        </div>
+                        <ul class="navlist">
+                            <li><button>Facebook</button></li>
+                            <li><button>Instagram</button></li>
+                            <li><button>Pinterest</button></li>
+                        </ul>
+                    </div>
+                </div>
 
+                <div class="extra-info">
+                    <div class="location">
+                        <p class="location-title">Visit Our Stores</p>
+                        <p class="number">Customer service: 123-456-7890</p>
+                    </div>
+                    <div class="newsletter">
+                        <div class="sub-bar">    
+                            <input type="text" placeholder="Enter your email here *">  
+                        </div>
+                        <button class="subscribe">Subscribe Now</button>
+                    </div>
+                </div>
+            </div>
+            
         </div>
+        <div class="footer">
+            <p>Inspired by Wix Website <a href="https://www.wix.com/website-template/view/html/2067?originUrl=https%3A%2F%2Fwww.wix.com%2Fwebsite%2Ftemplates%2Fhtml%2Fonline-store%2Ffood-drinks-ecom&tpClick=view_button&esi=15580b56-0ce4-4978-91ed-979646af49e6" target="_blank">Visit Site</a></p>
+        </div>
+    </div>
+        
+    
+    <div class="content hidden">
+        Im Menu Page
+    </div>
+    <div class="content hidden">
+        im About Page
     </div>
 </body>
 </html>
